@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faisal Movers Express | Pakistan's Premium Transport Company</title> 
+ <link rel="icon" href="https://pbs.twimg.com/profile_images/1168488348761165830/OwmgMM_H_400x400.jpg" type="image/x-icon">
+ <style>
+     *{
+margin: 0;
+padding: 0;
+}
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+}
+.header{
+    background-color: #242526;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    height: 300px;
+}
+.logo{
+width:350px;
+height:100px;
+position:absolute;
+left:0;
+top:0;
+}
+.nav-area{
+       float: right;
+       list-style: none;
+       margin-top: 15px;
+}
+.nav-area li {
+       display: inline-block;
+}
+.nav-area li a{
+           color: #fff;
+           text-decoration: none;
+           padding: 10px 20px;
+           font-family: candara;
+           font-size: 20px;
+}
+.nav-area ul li::after{
+           content: '';
+           width: 0%;
+           height: 2px;
+           background: #f44336;
+           display: block;
+           margin: auto;
+           transition: 0.5s;
+}
+.nav-area ul li:hover::after{
+           width: 100%;
+}
+.welcome{
+           position: absolute;
+           width: 650px;
+           height: 300px;
+           margin: 19% -9%;
+           text-align: center;
+}
+.welcome h1{
+          text-align: left;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 70px;
+          font-family: candara;
+          margin-top: -70px;
+          margin-left: -30px;
+}
+.profile{
+           position: absolute; 
+           width: 950px;
+           height: 300px;
+           margin: 10% 15%;
+           text-align: left;
+}
+.profile h3{
+          text-align: center;
+          color: #242526;
+          font-size: 40px;
+          font-family: candara;
+}
+.profile p{
+          text-align: left;
+          color: #242526;
+          font-size: 21px;
+          font-family: candara;
+}
+body {
+        height: 100%;
+        line-height:1.5;
+        font-family: 'Poppins', sans-serif;
+}
+.contain{
+    max-width:1175px;
+    margin:red;
+}
+.Row-F {
+    display: flex;
+    flex-wrap: warp;
+}
+.Footer-col ul{
+    list-style:none;
+}
+.footer {
+    background-color: #424242;
+    padding: 70px 0;
+    height: 130px;
+    position: relative;
+    margin-top: 1700px;
+    clear: both;
+}
+.Footer-col{
+    width: 25%;
+    padding: 30 15px;
+    padding-left: 35px;
+}
+.Footer-col p{
+            color: #bbbbbb;
+            font-size: 15px;
+}
+.Footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom:30px;
+        font-weight: 500;
+        position:relative;
+}
+.Footer-col h4::before{
+            content:'';
+            position:absolute;
+            left:0;
+            bottom: -10px;
+            background-color:#e91e63;
+            height:2px;
+            box-sizing:border-box;
+            width:100px;
+        }
+.Footer-col ul li:not(:last-child){
+            margin-bottom:10px;
+
+        }
+.Footer-col ul li a{
+        font-size:16px;
+        text-transform:capitalize;
+        color:#ffffff;
+        text-decoration:none;
+        font-weight:300;
+        color:#bbbbbb;
+        display:block;
+        transition: all 0.3s ease;
+    }
+.Footer-col ul li a:hover{
+        color: #ffffff;
+        padding-left:10px;
+
+    }
+.copyright {
+     background-color: #E2E5DE;
+     color: #424242;
+     height: 5vh;
+     padding-top: 10px;
+     padding-left: 90px;
+}
+.comapny {
+    display: none;
+}
+.company p{
+    display: none;
+}
+.company h3{
+    display: none;
+}
+.copyright p {
+    font-family: candara;
+    font-size: 15px;
+}
+.mob-footer{
+    display: none;
+}
+.mob-copyright{
+    display: none;
+}
+.company hr{
+    display: none;
+} 
+@media screen and (max-width: 700px) {
+    .header{
+    background-color: #242526;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    height: 170px;
+}
+    .logo{
+       width:200px;
+       height:50px;
+       position:absolute;
+       left:-40px;
+       top:0;
+        }
+    .nav-area ul li a{
+        display: none;
+    }
+    .welcome{
+            position: relative;
+            width: 650px;
+            height: 300px;
+            margin: 10% 106%;
+            text-align: center;
+    }
+    .welcome h1{
+            margin-top: 110px;
+            margin-left: -360px;
+            font-size: 28px;
+        } 
+.footer {
+    display: none;
+}
+.mob-footer{
+    display: block;
+    background-color: #424242;
+    padding: 70px 0;
+    height: 300px;
+    position: relative;
+    margin-top: 2300px;
+    clear: both;
+}
+.mob-footer h4{
+    font-size: 18px;
+        color: #ffffff;
+        margin-bottom:30px;
+        font-size: 15px;
+        font-family: candara;
+        position:relative;
+        padding-left: 15px;
+        margin-top: -30px;
+}
+.mob-footer p{
+    color: #bbbbbb;
+    font-size: 13px;
+    padding-left: 15px;
+    margin-top: -20px;
+}
+.mob-footer ul li a{
+        font-size:13px;
+        padding-top: -5px;
+        margin-top: 2px;
+        text-transform:capitalize;
+        color:#ffffff;
+        text-decoration:none;
+        color:#bbbbbb;
+        display:block;
+        transition: all 0.3s ease;
+        padding-left: 15px;
+    }
+.mob-footer ul li a:hover{
+        color: #ffffff;
+        padding-left:10px;
+    }
+.copyright{
+    display: none;
+}
+.mob-copyright{
+    display: block;
+    background-color: #E2E5DE;
+     color: #424242;
+     height: 5vh;
+     padding-top: 10px;
+     padding-left: 10px;
+}
+.mob-copyright p {
+    display: block;
+    font-family: candara;
+    font-size: 11px;
+}
+.company{
+           position: absolute;
+           width: 900px;
+           height: 300px;
+           margin: 7% 8%;
+           text-align: left;
+           display: block;
+}
+.company p{
+          text-align: left;
+          color: #242526;
+          font-size: 16px;
+          font-family: candara;
+          display: block;
+}
+.company h3{
+    display: block;
+    text-align: left;
+    margin-left: 50px;
+    color: #242526;
+    font-size: 25px;
+    font-family: candara;
+}
+.profile{
+           display: none;
+}
+}
+ </style>
+</head>
+<body>
+    <div class="header">
+        <div class="wrapper">
+        <a href="Front_Page.html"><img src="C:\Users\Raghib\Downloads\CAED FINAL PROJECT\images-removebg-preview.png" class="logo"></a>
+        <div class ="nav-area">
+        <ul class ="nav-area" style="padding-left: 30px; top: 0;">
+           <li><a href="home.html">HOME</a></li>
+           <li><a href="about.html">COMPANY PROFILE</a></li>
+           <li><a href="contact.html">CONTACT US</a></li>
+           <li><a href="gallery.html">GALLERY</a></li>
+           <li><a href="message.html">CHAIRMAN MESSAGE</a></li>
+           <li><a href="https://www.bookkaru.com/">ONILNE BOOKING</a></li>
+        </ul>
+        <div class="welcome">
+            <h1>COMPANY PROFILE</h1>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="profile">
+            <h3>Vision</h3>
+            <p>Our strong vision is to deliver excellence in services that exceeds the needs and expectation of our customers.
+            Strive to become a market leader in the transportation industry of which others aspire to follow.<br></p>
+            <br><hr style="color: grey">
+            
+            
+            <h3>Mission Statement</h3>
+            <p>We are committed towards the economic growth of our country by participating in the core infrastructure development.
+            Providing a reliable and comfortable public transport service which people can look to as a viable and convenient transport alternative to any other transportation source. We will continually monitor the needs of the traveling public and review our service delivery on a regular basis in order to maintain people’s interest in our public transport service.<br></p>
+            <br><hr style="color: grey">
+            
+            
+            <h3>Company Profile</h3>
+            <p>Faisal Movers is pioneer in the business of Transportation in Pakistan. It has a protracted history; based on more than two decades of excellence in services. The founder members strong vision and dedication made it possible to launch Faisal Movers. The journey, which was started in 1994 under the banner of Faisal Movers with logistics business and then express bus service between Sargodha and Multan, which has been expanded to many folds. Faisal Movers serves as a hub of passenger transport throughout the length and breadth of Pakistan.<br></p>
+            <br><hr style="color: grey">
+            <p>Today Faisal Movers is having a large and modern fleet of buses which is catering the needs of approximately 300, 000 passengers per month nationwide. The devoted, professional and hospitable staff is always available on all terminals to guide and assist the esteem passengers. The ever increasing demand forced us to expand fleet of bus service by inducting new Daewoo buses and new routes. Now the passengers can relax and enjoy the comfortable and safe journey by watching state of the art audio video equipment and refreshment. We are here to serve the corporate sector and wining the trust of many organizations like Pakistan Cricket Board for International Cricket Matches, Pak Arab Fertilizers, Bahauddin Zakaria University, Engro Chemicals, Mezan Bank and many Foreign Delegations.</p>
+            
+            <h3>History Time Line</h3>
+            <p><b>1994:</b> Commence of Transportation Business carrying the logo of Faisal Movers.</p>
+            
+            <p><b>2001:</b> Express Bus Service started from Sargodha to Multan itinerary.</p>
+            
+            <p><b>2004:</b> Our Model of business was changed to non-stop luxury bus service and
+            
+            Multan – Rawalpindi route was established in January followed by CSD terminal at Multan Cantonment which was inaugurated by Brig. Liaqat Basheer.</p>
+            <p><b>2005:</b> Computerized Ticketing was inaugurated for the fulfillment of modern technology.</p>
+            
+            <p><b>2006:</b> New destinations; D.G Khan and Bahawalpur, were added to serve the passengers of the southern Punjab.</p>
+            
+            <p><b>2008:</b> Multan – Okara – Lahore route was commenced by Inauguration new terminal at Okara cantonment.</p>
+            
+            <p><b>2010:</b>  Expanded the fleet with new Daewoo Buses on almost all routes.</p>
+            
+            <p><b>2011:</b> Lahore – Rawalpindi route was started to provide safe and secure journey for the travellers.</p>
+            
+            <p><b>2012:</b> Multan to Faisalabad and Sadiqabad to Multan – Lahore – Rawalpindi routes were started.</p>
+            
+            <p><b>2014:</b> Lahore – Peshawar Route was established.</p>
+            
+            <p><b>2015:</b> Commencement of Lahore to Sargodha route.</p>
+            
+            <p><b>2016:</b>  Start of Lahore to Faisalabad route.</p>
+            
+            <p><b>2017:</b> New Business class buses were added to fleet with Video on demand system for Lahore – Islamabad route</p>
+            </div>
+            <div class="company"><br>
+                <h3>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspVision</h3>
+                <p>Our strong vision is to deliver excellence in<br>services that exceeds the needs and<br>expectation of our customers.
+                Strive to<br>become a market leader in the transportation<br>industry of which others aspire to follow.<br></p>
+                <br><hr style="color: grey">
+                
+                
+                <h3>Mission Statement</h3>
+                <p>We are committed towards the economic<br>growth of our country by participating in the<br>core infrastructure development.
+                Providing a<br>reliable and comfortable public transport<br>service which people can look to as a viable<br>and convenient transport alternative to any<br>other transportation source. We will<br>continually monitor the needs of the traveling<br>public and review our service delivery on a<br>regular basis in order to maintain people’s<br>interest in our public transport service.<br></p>
+                <br><hr style="color: grey">
+                
+                
+                <h3>Company Profile</h3>
+                <p>Faisal Movers is pioneer in the business of<br>Transportation in Pakistan. It has a protracted<br>history; based on more than two decades<br>of excellence in services. The founder<br>members strong vision and dedication made it<br>possible to launch Faisal Movers. The journey,<br>which was started in 1994 under the banner<br>of Faisal Movers with logistics business and<br>then express bus service between Sargodha<br>and Multan, which has been expanded to<br>many folds. Faisal Movers serves as a hub of<br>passenger transport throughout the length<br>and breadth of Pakistan.<br></p>
+                <br><hr style="color: grey">
+                <p>Today Faisal Movers is having a large and<br>modern fleet of buses which is catering the<br>needs of approximately 300, 000 passengers<br>per month nationwide. The devoted,<br>professional and hospitable staff is always<br>available on all terminals to guide and assist<br>the esteem passengers. The ever increasing<br>demand forced us to expand fleet of bus<br>service by inducting new Daewoo buses and<br>new routes. Now the passengers can relax and<br>enjoy the comfortable and safe journey by<br>watching state of the art audio video<br>equipment and refreshment. We are here to<br>serve the corporate sector and wining the<br>trust of many organizations like Pakistan<br>Cricket Board for International Cricket<br>Matches, Pak Arab Fertilizers, Bahauddin<br>Zakaria University, Engro Chemicals, Mezan<br>Bank and many Foreign Delegations.</p>
+                <br>
+
+                <h3>History Time Line</h3>
+                <p><b>1994:</b> Commence of Transportation Business<br>carrying the logo of Faisal Movers.</p>
+                
+                <p><b>2001:</b> Express Bus Service started from<br>Sargodha to Multan itinerary.</p>
+                
+                <p><b>2004:</b> Our Model of business was changed to<br>non-stop luxury bus service and
+                
+                Multan –<br>Rawalpindi route was established in January<br>followed by CSD terminal at Multan<br>Cantonment which was inaugurated by Brig.<br>Liaqat Basheer.</p>
+                <p><b>2005:</b> Computerized Ticketing was inaugurated<br>for the fulfillment of modern technology.</p>
+                
+                <p><b>2006:</b> New destinations; D.G Khan and<br>Bahawalpur, were added to serve the<br>passengers of the southern Punjab.</p>
+                
+                <p><b>2008:</b> Multan – Okara – Lahore route was<br>commenced by Inauguration new terminal at<br>Okara cantonment.</p>
+                
+                <p><b>2010:</b>  Expanded the fleet with new Daewoo<br>Buses on almost all routes.</p>
+                
+                <p><b>2011:</b> Lahore – Rawalpindi route was started to<br>provide safe and secure journey for the<br>travellers.</p>
+                
+                <p><b>2012:</b> Multan to Faisalabad and Sadiqabad to<br>Multan – Lahore – Rawalpindi routes were<br>started.</p>
+                
+                <p><b>2014:</b> Lahore – Peshawar Route was<br>established.</p>
+                
+                <p><b>2015:</b> Commencement of Lahore to Sargodha<br>route.</p>
+                
+                <p><b>2016:</b>  Start of Lahore to Faisalabad route.</p>
+                
+                <p><b>2017:</b> New Business class buses were added to<br>fleet with Video on demand system for<br>Lahore – Islamabad route.</p>
+                </div>
+        </div>
+        </div>
+        </div>
+        <footer class="footer">
+            <div class="contain">
+                <div class="Row-F">
+                    <div class="Footer-col">
+                        <h4>About Us</h4>
+                        <p>
+                            Faisal Movers provide transportation and logistics services all over Pakistan
+                            with a track record of outstanding comfort, security and responsibility.
+                        <p>
+                    </div>
+                    <div class="Footer-col">
+                        <h4>Latest News</h4>
+                        <ul>
+                           <p>Faisal Movers operating through motorways of Gilgit, Hunza & Many More in 2021!</p>
+                            <p>Islamabad to Lahore & Return_ Most Travelled Route in Pakistan</p>
+                        </ul>
+                    </div>
+                    <div class="Footer-col">
+                        <h4>Booking</h4>
+                        <ul>
+                            <li><a href="https://www.bookkaru.com" target="_blank" ">Lahore</a></li>
+                            <li><a href="https://www.bookkaru.com" target="_blank" ">Islamabad</a></li>
+                            <li><a href="https://www.bookkaru.com" target="_blank" ">Find your City</a></li>
+                        </ul>
+                    </div>
+                    <div class="Footer-col">
+                        
+                        <ul>
+                            <img src="C:\Users\Raghib\Downloads\CAED FINAL PROJECT\images-removebg-preview.png" width="400px" />
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="mob-footer">
+            <h4>ABOUT US</h4>
+                        <p>
+                            Faisal Movers provide transportation and<br>logistics services all over Pakistan
+                            with a track<br>record of outstanding comfort, security and<br>responsibility.
+                        <br><br><br><br>
+            <h4>LATEST NEWS</h4>
+                        <p>
+                            Faisal Movers operating through motorways<br>of Gilgit, Hunza & Many More in 2021!</p>
+                            <br>
+                            <p>Islamabad to Lahore & Return_ Most Travelled<br>Route in Pakistan</p>
+                            <br><br>
+            <h4>BOOKING</h4>
+            <p>
+                            <ul>
+                                <li><a href="https://www.bookkaru.com" target="_blank" ">Lahore</a></li>
+                                <li><a href="https://www.bookkaru.com" target="_blank" ">Islamabad</a></li>
+                                <li><a href="https://www.bookkaru.com" target="_blank" ">Find your City</a></li>
+                            </ul>
+                        </p>
+        </div>
+        <div class="mob-copyright">
+            <p>Copyright © 1994-2021 Faisal Movers ® | All Rights Reserved</p>
+            </div>
+        <div class="copyright">
+        <p>Copyright © 1994-2021 Faisal Movers ® | All Rights Reserved</p>
+        </div>
+</body>
+</html>

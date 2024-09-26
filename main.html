@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faisal Movers Express | Pakistan's Premium Transport Company</title> 
+ <link rel="icon" href="https://pbs.twimg.com/profile_images/1168488348761165830/OwmgMM_H_400x400.jpg" type="image/x-icon">
+<style>
+*{
+margin: 0;
+padding: 0;
+}
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+}
+    html {
+        font-size: 62.5%;
+    }
+body {
+    height: 100%;
+    line-height:1.5;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background-color: #242526;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    height: 11rem;
+}
+.nav-area{
+       float: right;
+       list-style: none;
+       margin-top: 1.5rem;
+}
+.nav-area li {
+       display: inline-block;
+}
+.nav-area li a{
+           color: #fff;
+           text-decoration: none;
+           padding: 1.0rem 2.0rem;
+           font-family: candara;
+           font-size: 2rem;
+}
+.nav-area ul li::after{
+           content: '';
+           width: 0%;
+           height: .2rem;
+           background: #f44336;
+           display: block;
+           margin: auto;
+           transition: 0.5s;
+}
+.nav-area ul li:hover::after{
+           width: 100%;
+}
+.welcome{
+           position: absolute;
+           width: 65rem;
+           height: 30rem;
+           margin: 13% -10%;
+           text-align: center;
+}
+.welcome h1{
+          text-align: left;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 7rem;
+          font-family: candara;
+}
+.profile{
+           position: absolute; 
+           width: 95rem;
+           height: 30rem;
+           margin: 10% 15%;
+           text-align: left;
+}
+.profile h3{
+          text-align: center;
+          color: #242526;
+          font-size: 4rem;
+          font-family: candara;
+}
+.profile p{
+          text-align: left;
+          color: #242526;
+          font-size: 2.1rem;
+          font-family: candara;
+}
+.contain{
+    max-width:117.5rem;
+    margin:red;
+}
+.Row-F {
+    display: flex;
+    flex-wrap: warp;
+}
+.Footer-col ul{
+    list-style:none;
+}
+.footer {
+    background-color: #424242;
+    padding: 7rem 0;
+    height: 13rem;
+    position: relative;
+    margin-top: -.7rem;
+    clear: both;
+}
+.Footer-col{
+    width: 35%;
+    padding: 3.0rem 1.5rem;
+    padding-left: 9rem;
+}
+.Footer-col h4{
+        font-size: 1.8rem;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom:3rem;
+        font-weight: 500;
+        position:relative;
+}
+.Footer-col h4::before{
+            content:'';
+            position:absolute;
+            left:0;
+            bottom: -1.0rem;
+            background-color:#e91e63;
+            height:.2rem;
+            box-sizing:border-box;
+            width:10rem;
+        }
+.Footer-col ul li:not(:last-child){
+            margin-bottom:1.0rem;
+
+        }
+.Footer-col p{
+            color: #bbbbbb;
+            font-size: 1.5rem;
+}
+.Footer-col ul li a{
+        font-size:1.6rem;
+        text-transform:capitalize;
+        color:#ffffff;
+        text-decoration:none;
+        font-weight:300;
+        color:#bbbbbb;
+        display:block;
+        transition: all 0.3s ease;
+    }
+.Footer-col ul li a:hover{
+        color: #ffffff;
+        padding-left:1rem;
+
+    }
+.copyright {
+     background-color: #E2E5DE;
+     color: #424242;
+     height: 5vh;
+     padding-top: 1rem;
+     padding-left: 9rem;
+}
+.copyright p {
+    font-family: candara;
+    font-size: 1.5rem;
+}
+.slider-box {
+    width: 90%;
+    max-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin-left: 7rem;
+    background-color: #242526;
+}
+#slider {
+    margin-top: 4.8rem;
+    width: 100%;
+    display: inline-flex;
+    transition: 0.7s;
+}
+#slider img {
+     height: 48vh;
+     width: 100%;
+}
+.indicators {
+     position: absolute;
+     left: 50%;
+     bottom: 2rem;
+     transform: translateX(-50%);
+}
+.indicators span {
+display: inline-block;
+width: 1.5rem;
+height: 1.5rem;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.5);
+cursor: pointer;
+}
+.active {
+background: #000000 !important;
+}
+.container {
+     width: 50rem;
+     padding: 2rem;
+     margin: 10rem auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.box {
+     width: 60rem;
+     margin: 1rem 1rem;
+     box-shadow: 0 0 2rem .2rem rgba(0,0,0,.1);
+}
+.box img {
+     display: block;
+     width: 60rem;
+     border-radius: .5rem;
+}
+.box:hover {
+     transform: scale(1.1);
+     z-index: 2;
+}
+.box h3 {
+font-family: candara;
+}
+.box p {
+font-family: candara;
+}
+main {
+     height: 30vh;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+.right {
+     max-width: 60rem;
+     height: auto;
+     text-align: right;
+     font-size: 2rem;
+}
+.right p {
+     border-radius: 52% 10% 10% 52% / 22% 10% 10% 27%;
+     background-color: aquamarine;
+}
+.left {
+font-family: candara;
+font-size: 4rem;
+margin-bottom: 2rem;
+}
+.map h1 {
+     text-align: center;
+     font-size: 10rem;
+     font-family: Candara;
+}
+.map {
+     align-content: center;
+}
+.map p {
+     color: black;
+}
+.map h3 {
+     color: black;
+        }
+    @media(max-width:998px) {
+        html {
+            font-size: 45%;
+        }
+    }
+
+    @media(max-width:768px) {
+        html {
+            font-size: 45%;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="header">
+<div class="wrapper">
+<a href="Front_Page.html"><img src="C:\Users\Raghib\Downloads\CAED FINAL PROJECT\images-removebg-preview.png"
+alt="mypicture" style="width:350px; height:100px; position:absolute; left:0; top:0;"></a>
+<div class ="nav-area">
+<ul class ="nav-area" style="padding-left: 30px; top: 0;">
+   <li><a href="home.html">HOME</a></li>
+   <li><a href="about.html">COMPANY PROFILE</a></li>
+   <li><a href="contact.html">CONTACT US</a></li>
+   <li><a href="gallery.html">GALLERY</a></li>
+   <li><a href="message.html">CHAIRMAN MESSAGE</a></li>
+   <li><a href="https://www.bookkaru.com/">ONILNE BOOKING</a></li>
+</ul>
+</div>
+<div class="slider-box">
+        <div id="slider">
+            <img src="https://findcontact.pk/wp-content/uploads/2021/07/…n-Terminal-Online-Contact-Numbers-1-1-300x174.jpg">
+            <img src="	https://static.pakwheels.com/2017/04/28.jpg">
+            <img src="	https://i.pinimg.com/736x/24/23/ea/2423ea129c0cbd9677b5372bcc2686a5.jpg">
+            <img src="https://thefaisalmovers.com/wp-content/uploads/202…ookkaru-Faisal-Movers-Contact-Number-768x432.webp">
+        </div>
+        <div class="indicators">
+            <span id="btn1" class="active"></span>
+            <span id="btn2"></span>
+            <span id="btn3"></span>
+            <span id="btn4"></span>
+        </div>
+</div>
+<div class="container">
+        <div class="box">
+        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtETX6fF24A-BCpfiROxIyp5r3d7tM7dAGVw&s" /></a><br /><h3>FM-LOGISTICS<br /><p>Safe,Secure & Fatest Logistic Services.</p></h3>
+</div>
+        <div class="box">
+        <a href="#"><img src="	https://i0.wp.com/pkbuses.com/wp-content/uploads/2…Class-Yutong-Master-buses.jpg?fit=800%2C450&ssl=1" /></a><br /><h3>FM EXPRESS<br /><p>Ensuring state of art the transportation services.</p></h3>
+        </div>
+        <div class="box">
+        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTniV2LM1RQeILh3IBMdtFz1GdgXWGA6jAmVw&s" /></a><br /><h3>KCS Cargo Service<br /><p>Hassel Free Cargo & Courier Services.</p></h3>
+</div>
+</div>
+<main>
+        <div class="left">
+            <h1>ABOUT</h1>
+        </div>
+        <div class="right">
+            <p style="font-family: candara">
+                Welcome to Faisal Movers; a company with an incredible track record of Quality & Excellence in services across the country. Having an excellent history of quarter a century. <br />From its establishment, the company has making continuous progress to ensure comfort, luxury, safety, time management and best customer support.
+                Largest fleet of buses and trailers, having highly professional & trained staff and state of the art technology, Faisal Movers is the largest company  in Transport & Logistic Industry.<br />
+                Uncompromising Quality & Excellence in services is a commitment of Faisal Movers with their prestigious clients.
+            </p>
+        </div>
+    </main>
+<div class="map">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1>FIND US:</h1>
+        <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.8200714596355!2d73.08087635016145!3d33.66182374555699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9549fa89f5bd%3A0xacf728d015b97f67!2sFaisal%20Movers!5e0!3m2!1sen!2s!4v1640061344723!5m2!1sen!2s" width="1349" height="750" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </p>
+    </div>
+<script>
+        var slide = document.getElementById("slider");
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var btn3 = document.getElementById('btn3');
+        var btn4 = document.getElementById('btn4');
+        btn1.onclick = function () {
+        slide.style.transform = "translateX(0px)";
+        btn1.classList.add('active');
+        btn2.classList.remove('active');
+        btn3.classList.remove('active');
+        btn4.classList.remive('active');
+        };
+        btn2.onclick = function () {
+        slide.style.transform = "translateX(-100%)";
+        btn1.classList.remove('active');
+        btn2.classList.add('active');
+        btn3.classList.remove('active');
+        btn4.classList.remove('active');
+        };
+        btn3.onclick = function () {
+        slide.style.transform = "translateX(-200%)";
+        btn1.classList.remove('active');
+        btn2.classList.remove('active');
+        btn3.classList.add('active');
+        btn4.classList.remove('active');
+        };
+        btn4.onclick = function () {
+        slide.style.transform = "translateX(-300%)";
+        btn1.classList.remove('active');
+        btn2.classList.remove('active');
+        btn3.classList.remove('active');
+        btn4.classList.add('active');
+        };
+    </script>
+<footer class="footer">
+    <div class="contain">
+        <div class="Row-F">
+            <div class="Footer-col">
+                <h4>About Us</h4>
+                <p>
+                   Faisal Movers provide transportation and logistics services all over Pakistan
+                    with a track record of outstanding comfort, security and responsibility.
+                </p>
+            </div>
+            <div class="Footer-col">
+                <h4>Latest News</h4>
+                <ul>
+                   <p>Faisal Movers operating through motorways of Gilgit, Hunza & Many More in 2021!</p>
+                    <p>Islamabad to Lahore & Return_ Most Travelled Route in Pakistan</p>
+                </ul>
+            </div>
+            <div class="Footer-col">
+                <h4>Booking</h4>
+                <ul>
+                    <li><a href="https://www.bookkaru.com" target="_blank" ">Lahore</a></li>
+                    <li><a href="https://www.bookkaru.com" target="_blank" ">Islamabad</a></li>
+                    <li><a href="https://www.bookkaru.com" target="_blank" ">Find your City</a></li>
+                </ul>
+            </div>
+            <div class="Footer-col">
+                <ul>
+                    <img src="C:\Users\Raghib\Downloads\CAED FINAL PROJECT\images-removebg-preview.png" width="400px" />
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+<p>Copyright © 1994-2021 Faisal Movers ® | All Rights Reserved</p>
+</div>
+</body>
+</html>
